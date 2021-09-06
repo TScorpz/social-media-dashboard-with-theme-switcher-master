@@ -1,0 +1,64 @@
+html {
+    color: var(--DarkGrayishBlue);
+}
+
+header {
+    background: var(--VeryPaleBlue);
+}
+
+header h1 {
+    color: var(--VeryDarkBlue);
+}
+
+header .dashboard-div {
+    border-bottom: 1px solid var(--VeryDarkBlue);
+}
+
+.slider::before {
+    background-color: white;
+}
+
+input:checked + .slider {
+    background: linear-gradient(var(--ToggleLight), var(--ToggleLight));
+}
+
+input:checked:hover + .slider {
+    background: var(--ToggleDark);
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 3px var(--ToggleLight);
+}
+
+.social {
+    background: var(--LightGrayishBlue);
+}
+
+.social.instagram {
+    background-image: linear-gradient(var(--LightGrayishBlue), var(--LightGrayishBlue)), linear-gradient(to right, var(--Instagram1),var(--Instagram2));
+}
+
+.social .number {
+    color: var(--DarkDesaturatedBlue);
+}
+
+.stats {
+    background: var(--LightGrayishBlue);
+}
+
+.stats .number {
+    color: var(--DarkDesaturatedBlue);
+}
+
+footer {
+    background: linear-gradient(to right, transparent, var(--LightGrayishBlue), transparent);
+}
+
+footer a:hover,
+footer a:focus {
+    color: hsl(14, 72%, 60%);
+    text-shadow: 1px -1px 2px hsl(14, 22%, 20%);
+    box-shadow: 5px 0 8px hsl(14, 12%, 60%),
+                -5px 0 8px hsl(14, 12%, 60%),
+                0 0 8px hsl(14, 12%, 60%) inset;
+} 

@@ -7,6 +7,7 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="light-theme.css" id='styleSheet'>
 
   <title>Frontend Mentor | [Challenge Name Here]</title>
 </head>
@@ -17,9 +18,9 @@
       <h1>Social Media Dashboard</h1>
       <p>Total Followers: 23,004</p>
     </div>
-    <p class='theme'>Dark Mode
+    <p id='theme'>Dark Mode
       <label class="switch">
-        <input type="checkbox" checked>
+        <input type="checkbox" id='theme-switch' onchange="changeTheme()" checked>
         <span class="slider round"></span>
       </label>
     </p>
@@ -148,6 +149,21 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Jevgenij D</a>.
   </footer>
+
+  <script>
+    function changeTheme() {
+      let switcher = document.getElementById('theme-switch');
+
+      if (switcher.checked) {
+        document.getElementById('styleSheet').setAttribute('href', 'light-theme.css');
+      }
+      else {
+        // document.styleSheets[0].href = "/dark-theme.css";
+        document.getElementById('styleSheet').setAttribute('href', 'dark-theme.css');
+      }
+    }
+
+  </script>
 </body>
 
 </html>
