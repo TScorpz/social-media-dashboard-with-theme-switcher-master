@@ -20,6 +20,7 @@
     --VeryDarkBlue: hsl(230, 17%, 14%);
     --VeryDarkBluePattern: hsl(232, 19%, 15%);
     --DarkDesaturatedBlue: hsl(228, 28%, 20%);
+    --DarkDesaturatedBlue2: hsl(226, 25%, 27%);
     --DesaturatedBlue: hsl(228, 34%, 66%);
     --White: hsl(0, 0%, 100%);
     
@@ -27,6 +28,7 @@
     --ToggleLight: hsl(230, 22%, 74%);
     --VeryPaleBlue: hsl(225, 100%, 98%);
     --LightGrayishBlue: hsl(227, 47%, 96%);
+    --LightGrayishBlue2: hsl(231, 30%, 91%);
     --DarkGrayishBlue: hsl(228, 12%, 44%);
 }
 
@@ -124,6 +126,7 @@ input:checked + .slider:before {
     border-radius: 4px;
     margin: 1.65em auto;
     border-top: 4px solid;
+    cursor: pointer;
 }
 
 .social img {
@@ -152,7 +155,7 @@ input:checked + .slider:before {
     border-left: 0;
     border-right: 0;
     border-radius: 4px;
-    background-clip: content-box, border-box;
+    /* background-clip: padding-box, border-box; */
 }
 
 .social.youtube {
@@ -221,6 +224,7 @@ input:checked + .slider:before {
     border-radius: 4px;
     padding: 0.8em 2em 1.5em 2em;
     margin: 1.1em 0;
+    cursor: pointer;
 }
 
 .stats .right {
@@ -291,19 +295,6 @@ footer a {
     padding: 0 0.1em;
     transition: 0.1s linear;
 }
-
-footer a:focus {
-    outline-style: none;
-}
-
- /* footer a:hover,
- footer a:focus {
-    color: hsl(14, 72%, 60%);
-    text-shadow: 1px -1px 2px var(--VeryDarkBlue);
-    box-shadow: 5px 0 8px hsla(167, 61%, 47%, 0.5),
-                -5px 0 8px hsla(167, 61%, 47%, 0.5),
-                0 0 8px hsla(167, 61%, 47%, 0.5) inset;
-}  */
 
 @font-face {
     font-family: Inter;
