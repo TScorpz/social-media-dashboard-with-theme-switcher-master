@@ -7,6 +7,10 @@ header {
     color: var(--DesaturatedBlue);
 }
 
+h2 {
+    color: var(--White);
+}
+
 header h1 {
     color: var(--White);
 }
@@ -65,10 +69,6 @@ input:focus + .slider {
     color: var(--White);
 }
 
-.overview h2 {
-    color: var(--White);
-}
-
 .stats {
     background: var(--DarkDesaturatedBlue);
 }
@@ -93,3 +93,9 @@ footer a:focus {
                 -5px 0 8px hsla(167, 61%, 47%, 0.5),
                 0 0 8px hsla(167, 61%, 47%, 0.5) inset;
 } 
+
+@media only screen and (min-width: 600px) {
+    header .dashboard-div {
+        border: none;
+    }
+}

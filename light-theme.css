@@ -75,3 +75,9 @@ footer a:focus {
                 -5px 0 8px hsl(14, 12%, 60%),
                 0 0 8px hsl(14, 12%, 60%) inset;
 } 
+
+@media only screen and (min-width: 600px) {
+    header .dashboard-div {
+        border: none;
+    }
+}
